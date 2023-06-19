@@ -22,6 +22,7 @@
 		86EA2237230F204B00B46FF9 /* OrderCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA2236230F204B00B46FF9 /* OrderCreationViewController.swift */; };
 		86EA2239230F2AA300B46FF9 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA2238230F2AA300B46FF9 /* OrderRequest.swift */; };
 		86EA223B230F2BDE00B46FF9 /* OrderAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA223A230F2BDE00B46FF9 /* OrderAmount.swift */; };
+		C57FDFD82A405C580052EC1A /* DropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FDFD72A405C580052EC1A /* DropdownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		86EA2238230F2AA300B46FF9 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
 		86EA223A230F2BDE00B46FF9 /* OrderAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAmount.swift; sourceTree = "<group>"; };
 		86ECAFDD23223D29008FDDDC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C57FDFD72A405C580052EC1A /* DropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				862CBE82230EF13700767774 /* ProductViewCell.swift */,
 				86EA2236230F204B00B46FF9 /* OrderCreationViewController.swift */,
 				862CBE86230EF9DB00767774 /* Extensions */,
+				C57FDFD72A405C580052EC1A /* DropdownViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				862CBE81230EE14F00767774 /* StoreFrontViewController.swift in Sources */,
 				86D2FB7622FC1B3300CF1FA1 /* AppDelegate.swift in Sources */,
 				86EA2237230F204B00B46FF9 /* OrderCreationViewController.swift in Sources */,
+				C57FDFD82A405C580052EC1A /* DropdownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +440,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Simple Integration/Simple Integration.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X6Z794U7BF;
+				DEVELOPMENT_TEAM = M9X7RF8HHH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -447,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.equalexperts.simpleintegration.johnny;
+				PRODUCT_BUNDLE_IDENTIFIER = com.equalexperts.simpleintegration.vyshakh1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -463,7 +467,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Simple Integration/Simple Integration.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X6Z794U7BF;
+				DEVELOPMENT_TEAM = M9X7RF8HHH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -474,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.equalexperts.simpleintegration.johnny;
+				PRODUCT_BUNDLE_IDENTIFIER = com.equalexperts.simpleintegration.vyshakh1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

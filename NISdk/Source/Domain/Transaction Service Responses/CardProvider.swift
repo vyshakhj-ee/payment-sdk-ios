@@ -16,6 +16,7 @@ public enum CardProvider: String, CaseIterable, Codable {
     case jcb = "JCB"
     case americanExpress = "AMERICAN_EXPRESS"
     case discover = "DISCOVER"
+    case mada = "MADA"
     case unknown
     
     public var pkNetworkType: PKPaymentNetwork {
@@ -26,6 +27,7 @@ public enum CardProvider: String, CaseIterable, Codable {
         case .dinersClubInternational: return .masterCard
         case .discover: return .discover
         case .jcb: return .JCB
+        case .mada: return .masterCard
         case .unknown: return .visa
         }
     }

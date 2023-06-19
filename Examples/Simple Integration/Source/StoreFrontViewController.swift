@@ -22,6 +22,7 @@ class StoreFrontViewController:
     
     var collectionView: UICollectionView?
     let payButton = UIButton()
+    let dropDownButton = UIButton()
     lazy var applePayButton = PKPaymentButton(paymentButtonType: .buy , paymentButtonStyle: .black)
     let buttonStack: UIStackView = {
         let stack = UIStackView()
@@ -140,7 +141,19 @@ class StoreFrontViewController:
         payButton.setTitle("Pay", for: .normal)
         payButton.layer.cornerRadius = 5
         payButton.addTarget(self, action: #selector(payButtonTapped), for: .touchUpInside)
+        
+//        dropDownButton.backgroundColor = .black
+//        dropDownButton.setTitleColor(.white, for: .normal)
+//        dropDownButton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+//        dropDownButton.setTitleColor(UIColor(red: 255, green: 255, blue: 255, alpha: 0.6), for: .highlighted)
+//        dropDownButton.setTitle("Transaction", for: .normal)
+//        dropDownButton.layer.cornerRadius = 5
+//        dropDownButton.addTarget(self, action: #selector(pickerTapped), for: .touchUpInside)
+        
+        
+        buttonStack.addArrangedSubview(dropDownButton)
         buttonStack.addArrangedSubview(payButton)
+
         
         // Pay button for Apple Pay
         if(NISdk.sharedInstance.deviceSupportsApplePay()) {

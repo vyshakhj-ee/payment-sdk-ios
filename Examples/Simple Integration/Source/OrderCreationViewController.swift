@@ -33,7 +33,8 @@ class OrderCreationViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
                 
         if(paymentMethod == .ApplePay) {
-            let merchantId = ""
+            let merchantId = "merchant.com.ni.ksamerchant"
+            //let merchantId = "merchant.com.ni.merchant-app"
             assert(!merchantId.isEmpty, "You need to add your apple pay merchant ID above")
             paymentRequest = PKPaymentRequest()
             paymentRequest?.merchantIdentifier = merchantId
@@ -74,12 +75,12 @@ class OrderCreationViewController: UIViewController {
     
     func createOrder() {
         // Multiply amount always by 100 while creating an order
-        let orderRequest = OrderRequest(action: "SALE",
+        let orderRequest = OrderRequest(action: "AUTH",
                                         amount: OrderAmount(currencyCode: "AED", value: paymentAmount * 100))
         let encoder = JSONEncoder()
         let orderRequestData = try! encoder.encode(orderRequest)
         let headers = ["Content-Type": "application/json"]
-        let request = NSMutableURLRequest(url: NSURL(string: "http://localhost:3000/api/createOrder")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "http://192.168.30.12:3000/api/createOrder")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "POST"

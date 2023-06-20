@@ -22,7 +22,6 @@ class StoreFrontViewController:
     
     var collectionView: UICollectionView?
     let payButton = UIButton()
-    let dropDownButton = UIButton()
     lazy var applePayButton = PKPaymentButton(paymentButtonType: .buy , paymentButtonStyle: .black)
     let buttonStack: UIStackView = {
         let stack = UIStackView()
@@ -151,7 +150,7 @@ class StoreFrontViewController:
 //        dropDownButton.addTarget(self, action: #selector(pickerTapped), for: .touchUpInside)
         
         
-        buttonStack.addArrangedSubview(dropDownButton)
+//        buttonStack.addArrangedSubview(dropDownButton)
         buttonStack.addArrangedSubview(payButton)
 
         

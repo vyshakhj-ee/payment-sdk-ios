@@ -22,7 +22,9 @@
 		86EA2237230F204B00B46FF9 /* OrderCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA2236230F204B00B46FF9 /* OrderCreationViewController.swift */; };
 		86EA2239230F2AA300B46FF9 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA2238230F2AA300B46FF9 /* OrderRequest.swift */; };
 		86EA223B230F2BDE00B46FF9 /* OrderAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA223A230F2BDE00B46FF9 /* OrderAmount.swift */; };
-		C57FDFD82A405C580052EC1A /* DropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FDFD72A405C580052EC1A /* DropdownViewController.swift */; };
+		C57FDFDA2A406C4E0052EC1A /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FDFD92A406C4E0052EC1A /* OrderType.swift */; };
+		C57FDFDC2A406D2A0052EC1A /* RecurringDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FDFDB2A406D2A0052EC1A /* RecurringDetails.swift */; };
+		C57FDFDE2A406D650052EC1A /* RecurringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FDFDD2A406D650052EC1A /* RecurringType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,9 @@
 		86EA2238230F2AA300B46FF9 /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
 		86EA223A230F2BDE00B46FF9 /* OrderAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAmount.swift; sourceTree = "<group>"; };
 		86ECAFDD23223D29008FDDDC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		C57FDFD72A405C580052EC1A /* DropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewController.swift; sourceTree = "<group>"; };
+		C57FDFD92A406C4E0052EC1A /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		C57FDFDB2A406D2A0052EC1A /* RecurringDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringDetails.swift; sourceTree = "<group>"; };
+		C57FDFDD2A406D650052EC1A /* RecurringType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,6 @@
 				862CBE82230EF13700767774 /* ProductViewCell.swift */,
 				86EA2236230F204B00B46FF9 /* OrderCreationViewController.swift */,
 				862CBE86230EF9DB00767774 /* Extensions */,
-				C57FDFD72A405C580052EC1A /* DropdownViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -101,6 +104,9 @@
 				86EA223A230F2BDE00B46FF9 /* OrderAmount.swift */,
 				869DDD6323152BC80020CB20 /* PaymentMethods.swift */,
 				869DDD6523153A2D0020CB20 /* Product.swift */,
+				C57FDFD92A406C4E0052EC1A /* OrderType.swift */,
+				C57FDFDB2A406D2A0052EC1A /* RecurringDetails.swift */,
+				C57FDFDD2A406D650052EC1A /* RecurringType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,15 +291,17 @@
 				862CBE85230EF89100767774 /* UIView+AutoLayout.swift in Sources */,
 				86710F502310206300259AE9 /* UICollectionView+DeselectAll.swift in Sources */,
 				862CBE83230EF13700767774 /* ProductViewCell.swift in Sources */,
+				C57FDFDA2A406C4E0052EC1A /* OrderType.swift in Sources */,
 				862CBE88230EF9F700767774 /* UIView+Border.swift in Sources */,
 				869DDD6623153A2D0020CB20 /* Product.swift in Sources */,
 				869DDD6423152BC80020CB20 /* PaymentMethods.swift in Sources */,
+				C57FDFDE2A406D650052EC1A /* RecurringType.swift in Sources */,
 				8677558B2434523500A76C61 /* Double+Round.swift in Sources */,
 				86EA223B230F2BDE00B46FF9 /* OrderAmount.swift in Sources */,
+				C57FDFDC2A406D2A0052EC1A /* RecurringDetails.swift in Sources */,
 				862CBE81230EE14F00767774 /* StoreFrontViewController.swift in Sources */,
 				86D2FB7622FC1B3300CF1FA1 /* AppDelegate.swift in Sources */,
 				86EA2237230F204B00B46FF9 /* OrderCreationViewController.swift in Sources */,
-				C57FDFD82A405C580052EC1A /* DropdownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
